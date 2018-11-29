@@ -97,7 +97,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.edge_sense.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.edge_sense.sh
 
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
   PRODUCT_COPY_FILES += \
       $(LOCAL_PATH)/init.hardware.diag.rc.userdebug:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).diag.rc
   PRODUCT_COPY_FILES += \
@@ -517,7 +517,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.1-impl \
     android.hardware.audio@2.0-service
 
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PACKAGES += \
     tinyplay \
     tinycap \
@@ -575,7 +575,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 # Subsystem ramdump
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sys.ssr.enable_ramdumps=1
@@ -598,7 +598,7 @@ PRODUCT_PACKAGES += \
 
 # b/36703476
 # Set default log size on userdebug/eng build to 1M
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PROPERTY_OVERRIDES += ro.logd.size=1M
 endif
 
@@ -709,7 +709,7 @@ PRODUCT_COPY_FILES += \
      device/google/crosshatch/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb
 
 # Audio ACDB workspace files for QACT
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_COPY_FILES += \
      device/google/crosshatch/acdbdata/OEM/sdm845-tavil-snd-card/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sdm845-tavil-snd-card/workspaceFile.qwsp \
      device/google/crosshatch/acdbdata/OEM/sdm845-tavil-b1-snd-card/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/OEM/sdm845-tavil-b1-snd-card/workspaceFile.qwsp \
@@ -733,7 +733,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.radio.log_prefix="modem_log_"
 
 # Enable modem logging for debug
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sys.modem.diag.mdlog=true \
     persist.vendor.sys.modem.diag.mdlog_br_num=5
@@ -752,7 +752,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # default usb oem functions
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
   PRODUCT_PROPERTY_OVERRIDES += \
       persist.vendor.usb.usbradio.config=diag
 endif
