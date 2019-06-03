@@ -1,0 +1,44 @@
+[
+  {
+    "remote": "omnirom",
+    "repository": "android_packages_apps_SnapdragonCamera2",
+    "target_path": "packages/apps/SnapdragonCamera2",
+    "revision": "android-9.0"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_kernel_google_bluecross",
+    "target_path": "kernel/google/bluecross",
+    "revision": "android-9.0"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_device_google_crosshatch-sepolicy",
+    "target_path": "device/google/crosshatch-sepolicy",
+    "revision": "android-9.0"
+  },
+  {
+    "remote": "aosp",
+    "repository": "platform/external/nos/host/android",
+    "target_path": "external/nos/host/android",
+    "revision": "refs/tags/android-9.0.0_r44"
+  },
+  {
+    "remote": "aosp",
+    "repository": "platform/external/nos/host/generic",
+    "target_path": "external/nos/host/generic",
+    "revision": "refs/tags/android-9.0.0_r44"
+  },
+  {
+    "remote": "aosp",
+    "repository": "platform/hardware/qcom/bootctrl",
+    "target_path": "hardware/qcom/bootctrl",
+    "revision": "refs/tags/android-9.0.0_r44"
+  },
+  {
+    "remote": "aosp",
+    "repository": "platform/hardware/qcom/data/ipacfg-mgr",
+    "target_path": "hardware/qcom/data/ipacfg-mgr",
+    "revision": "refs/tags/android-9.0.0_r44"
+  }
+]
