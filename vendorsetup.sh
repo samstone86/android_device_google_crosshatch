@@ -16,3 +16,7 @@
 
 add_lunch_combo aosp_crosshatch-userdebug
 add_lunch_combo aosp_blueline-userdebug
+add_lunch_combo omni_crosshatch-userdebug
+add_lunch_combo omni_crosshatch-eng
+add_lunch_combo omni_blueline-userdebug
+add_lunch_combo omni_blueline-eng

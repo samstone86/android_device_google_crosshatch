@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+-include device/google/crosshatch/crosshatch/BoardConfig-omni.mk
+
 TARGET_BOOTLOADER_BOARD_NAME := crosshatch
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 165
 
