@@ -14,6 +14,12 @@
 # limitations under the License.
 #
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # Camera
 PRODUCT_PACKAGES += \
     SnapdragonCamera2
