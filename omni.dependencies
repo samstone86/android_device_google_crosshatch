@@ -6,18 +6,6 @@
     "revision": "android-9.0"
   },
   {
-    "remote": "omnirom",
-    "repository": "android_kernel_google_bluecross",
-    "target_path": "kernel/google/bluecross",
-    "revision": "android-9.0"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_device_google_crosshatch-sepolicy",
-    "target_path": "device/google/crosshatch-sepolicy",
-    "revision": "android-9.0"
-  },
-  {
     "remote": "aosp",
     "repository": "platform/external/nos/host/android",
     "target_path": "external/nos/host/android",
