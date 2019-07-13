@@ -17,8 +17,13 @@
 # must be before including omni part
 TARGET_BOOTANIMATION_SIZE := 1440p
 
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
+
+DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
 # Inherit device configuration
 $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
