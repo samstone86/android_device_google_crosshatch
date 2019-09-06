@@ -19,3 +19,9 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_blueline.mk \
     $(LOCAL_DIR)/omni_crosshatch.mk \
     $(LOCAL_DIR)/omni_blueline.mk \
+
+COMMON_LUNCH_CHOICES := \
+    aosp_crosshatch-userdebug \
+    aosp_blueline-userdebug \
+    omni_crosshatch-userdebug \
+    omni_blueline-userdebug

@@ -22,15 +22,12 @@ cc_binary {
     srcs: [
         "HealthService.cpp",
         "BatteryRechargingControl.cpp",
-        "BatteryMetricsLogger.cpp",
-        "LowBatteryShutdownMetrics.cpp",
-        "CycleCountBackupRestore.cpp",
-        "DeviceHealth.cpp",
     ],
 
     cflags: [
         "-Wall",
         "-Werror",
+        "-Wno-implicit-fallthrough", // warning in BatteryRechargingControl.cpp
     ],
 
     static_libs: [
@@ -41,12 +38,12 @@ cc_binary {
     ],
 
     shared_libs: [
-        "hardware.google.pixelstats@1.0",
         "libbase",
         "libcutils",
         "libhidlbase",
         "libhidltransport",
         "libhwbinder",
+        "libpixelhealth",
         "libutils",
         "android.hardware.health@2.0",
     ],
