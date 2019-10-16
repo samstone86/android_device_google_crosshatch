@@ -26,7 +26,7 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := b1c1_defconfig
-TARGET_KERNEL_SOURCE := kernel/google/msm-4.9
+TARGET_KERNEL_SOURCE := kernel/google/bluecross
 
 # Vbmeta
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
