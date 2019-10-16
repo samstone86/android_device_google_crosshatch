@@ -17,7 +17,7 @@
 # must be before including omni part
 TARGET_BOOTANIMATION_SIZE := 1080p
 
- Get the prebuilt list of APNs
+# Get the prebuilt list of APNs
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Inherit from our custom product configuration
