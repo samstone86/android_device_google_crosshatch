@@ -25,8 +25,8 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     MKDTIMG=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/mkdtimg
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := b1c1_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/bluecross
+TARGET_KERNEL_CONFIG := b1c1_defconfig
 
 # Vbmeta
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
