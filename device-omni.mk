@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 The Android Open-Source Project
+# Copyright 2019 The OmniROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,6 @@
 # limitations under the License.
 #
 
--include device/google/crosshatch/blueline/BoardConfig-omni.mk
-
-TARGET_BOOTLOADER_BOARD_NAME := blueline
-TARGET_SCREEN_DENSITY := 440
-TARGET_RECOVERY_UI_MARGIN_HEIGHT := 20
-
-include device/google/crosshatch/BoardConfig-common.mk
+# Camera
+PRODUCT_PACKAGES += \
+    SnapdragonCamera2
