@@ -17,3 +17,9 @@
 # Camera
 PRODUCT_PACKAGES += \
     SnapdragonCamera2
+
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
