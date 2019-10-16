@@ -14,10 +14,7 @@
 # limitations under the License.
 #
 
--include device/google/crosshatch/blueline/BoardConfig-omni.mk
+# SELinux
+include vendor/omni/sepolicy/sepolicy.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := blueline
-TARGET_SCREEN_DENSITY := 440
-TARGET_RECOVERY_UI_MARGIN_HEIGHT := 20
-
-include device/google/crosshatch/BoardConfig-common.mk
+-include vendor/google/crosshatch/BoardConfigVendor.mk
