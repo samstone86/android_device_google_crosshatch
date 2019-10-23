@@ -28,6 +28,8 @@ DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 # Inherit device configuration
 $(call inherit-product, device/google/crosshatch/aosp_blueline.mk)
 
+-include device/google/crosshatch/blueline/device-omni.mk
+
 # Discard inherited values and use our own instead.
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := google
