@@ -40,11 +40,11 @@ PRODUCT_MODEL := Pixel 3
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="blueline" \
     TARGET_DEVICE="blueline" \
-    PRIVATE_BUILD_DESC="blueline-user 10 QP1A.190711.020 5800535 release-keys"
+    PRIVATE_BUILD_DESC="blueline-user 10 QP1A.191005.007 5878874 release-keys"
 
-BUILD_FINGERPRINT := "google/blueline/blueline:10/QP1A.190711.020/5800535:user/release-keys"
+BUILD_FINGERPRINT := "google/blueline/blueline:10/QP1A.191005.007/5878874:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/blueline/blueline:10/QP1A.190711.020/5800535:user/release-keys
+    ro.build.fingerprint=google/blueline/blueline:10/QP1A.191005.007/5878874:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
